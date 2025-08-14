@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/lib/firebase";
 import { collection, addDoc, getDocs, query, where } from "firebase/firestore";
-import { retrieveData } from "@/lib/firebase/service";
+import { retrieveData } from "../../../lib/firebase/service";
 // GET /api/fasilitas
 export async function GET() {
   try {
